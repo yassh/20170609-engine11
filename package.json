@@ -5,7 +5,15 @@
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
+    "lint-staged": "^3.6.0",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0"
+  },
+  "lint-staged": {
+    "*.css": "stylelint",
+    "*.js": "eslint"
+  },
+  "scripts": {
+    "lint-staged": "lint-staged"
   }
 }
